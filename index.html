@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScaleAI - E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-panel">
+        <div class="nav-brand">ScaleAI</div>
+        <ul class="nav-links">
+            <li><a href="#" class="nav-btn active" data-target="view-shop">Shop</a></li>
+            <li><a href="#" class="nav-btn" data-target="view-advisor">Size Advisor</a></li>
+            <li><a href="#" class="nav-btn" data-target="view-collections">Collections</a></li>
+            <li><a href="#" class="nav-btn" data-target="view-contact">Contact</a></li>
+        </ul>
+        <div class="nav-cart">Cart (0)</div>
+    </nav>
+
+    <main class="store-container">
+
+        <!-- SHOP VIEW -->
+        <div id="view-shop" class="view active">
+            <header class="hero">
+                <h1 class="gradient-text">Future of Fashion</h1>
+                <p>Experience personalized fit and AI-powered recommendations.</p>
+            </header>
+
+            <div class="shop-controls">
+                <div class="search-bar glass-panel">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                </div>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="All">All</button>
+                    <button class="filter-btn" data-filter="Nike">Nike</button>
+                    <button class="filter-btn" data-filter="Levi's">Levi's</button>
+                    <button class="filter-btn" data-filter="Zara">Zara</button>
+                </div>
+            </div>
+
+            <section class="products-grid" id="main-product-grid">
+                <!-- Product 1 -->
+                <div class="product-card glass-panel" data-brand="Nike">
+                    <img src="C:/Users/hp/.gemini/antigravity/brain/ad96c549-314d-4f83-aa14-0860abb92001/nike_tshirt_1777484706861.png"
+                        alt="Nike T-Shirt" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-brand" data-brand="Nike">Nike</h3>
+                        <h2 class="product-title" data-item="T-Shirt">Minimal Black T-Shirt</h2>
+                        <p class="product-price">₹35.00</p>
+                        <div class="product-actions">
+                            <button class="btn primary-btn btn-small add-to-cart">Add to Cart</button>
+                            <button class="btn secondary-btn btn-small save-btn">❤️ Save</button>
+                        </div>
+                        <button class="btn magic-btn btn-small size-help-btn" style="margin-top: 10px;">Ask Size Help
+                            🪄</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card glass-panel" data-brand="Levi's">
+                    <img src="C:/Users/hp/.gemini/antigravity/brain/ad96c549-314d-4f83-aa14-0860abb92001/levis_jeans_1777484729093.png"
+                        alt="Levi's Jeans" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-brand" data-brand="Levi's">Levi's</h3>
+                        <h2 class="product-title" data-item="Jeans">Classic Blue Denim</h2>
+                        <p class="product-price">₹890.00</p>
+                        <div class="product-actions">
+                            <button class="btn primary-btn btn-small add-to-cart">Add to Cart</button>
+                            <button class="btn secondary-btn btn-small save-btn">❤️ Save</button>
+                        </div>
+                        <button class="btn magic-btn btn-small size-help-btn" style="margin-top: 10px;">Ask Size Help
+                            🪄</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card glass-panel" data-brand="Zara">
+                    <img src="C:/Users/hp/.gemini/antigravity/brain/ad96c549-314d-4f83-aa14-0860abb92001/leather_jacket_1777484749250.png"
+                        alt="Leather Jacket" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-brand" data-brand="Zara">Zara</h3>
+                        <h2 class="product-title" data-item="Leather Jacket">Premium Leather Jacket</h2>
+                        <p class="product-price">₹1200.00</p>
+                        <div class="product-actions">
+                            <button class="btn primary-btn btn-small add-to-cart">Add to Cart</button>
+                            <button class="btn secondary-btn btn-small save-btn">❤️ Save</button>
+                        </div>
+                        <button class="btn magic-btn btn-small size-help-btn" style="margin-top: 10px;">Ask Size Help
+                            🪄</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card glass-panel" data-brand="Levi's">
+                    <img src="C:/Users/hp/.gemini/antigravity/brain/ad96c549-314d-4f83-aa14-0860abb92001/levis_jeans_1777484729093.png"
+                        alt="Levi's Jeans" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-brand" data-brand="Levi's">Levi's</h3>
+                        <h2 class="product-title" data-item="Jeans">Vintage Black Denim</h2>
+                        <p class="product-price">₹950.00</p>
+                        <div class="product-actions">
+                            <button class="btn primary-btn btn-small add-to-cart">Add to Cart</button>
+                            <button class="btn secondary-btn btn-small save-btn">❤️ Save</button>
+                        </div>
+                        <button class="btn magic-btn btn-small size-help-btn" style="margin-top: 10px;">Ask Size Help
+                            🪄</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- COLLECTIONS VIEW -->
+        <div id="view-collections" class="view hidden">
+            <header class="hero">
+                <h1 class="gradient-text">Your Collections</h1>
+                <p>Items you've saved for later.</p>
+            </header>
+            <section class="products-grid" id="collections-grid">
+                <!-- Saved products will be dynamically inserted here -->
+            </section>
+            <div id="empty-collection-msg" style="text-align: center; color: var(--text-secondary); margin-top: 40px;">
+                You haven't saved any items yet.
+            </div>
+        </div>
+
+        <!-- CONTACT VIEW -->
+        <div id="view-contact" class="view hidden">
+            <header class="hero">
+                <h1 class="gradient-text">Contact Us</h1>
+                <p>We'd love to hear from you.</p>
+            </header>
+
+            <div class="contact-layout">
+                <div class="contact-details glass-panel card">
+                    <h2>Our Details</h2>
+                    <p><strong>Email:</strong> support@scaleai.com</p>
+                    <p><strong>Phone:</strong> +91 98765 43210</p>
+                    <p><strong>Address:</strong> 123 Tech Park, Innovation Valley, Bangalore, India</p>
+                    <p><strong>Hours:</strong> Mon - Fri, 9:00 AM - 6:00 PM</p>
+                </div>
+
+                <div class="contact-form glass-panel card">
+                    <h2>Send a Message</h2>
+                    <form
+                        onsubmit="event.preventDefault(); alert('Message sent! We will get back to you shortly.'); this.reset();">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Message</label>
+                            <textarea placeholder="How can we help you?" rows="4" required
+                                style="width:100%; padding: 12px; border-radius: 10px; background: rgba(15, 23, 42, 0.6); color: white; border: 1px solid var(--glass-border);"></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn" style="margin-top: 15px;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+        <!-- SIZE ADVISOR VIEW -->
+        <div id="view-advisor" class="view hidden">
+            <header class="hero">
+                <h1 class="gradient-text">Size Advisor</h1>
+                <p>Get personalized fit recommendations powered by AI.</p>
+            </header>
+
+            <div class="advisor-layout" style="display: grid; gap: 30px; max-width: 800px; margin: 0 auto;">
+                <section class="api-setup">
+                    <div class="input-group">
+                        <label for="api-key">Gemini API Key</label>
+                        <input type="password" id="api-key" placeholder="Enter API Key">
+                    </div>
+                </section>
+
+                <section class="history-section glass-panel card">
+                    <h2>1. Past Purchases (Old Details)</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 15px;">Tell us what you've bought before and how it fit.</p>
+                    <form id="purchase-form" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        <input type="text" id="brand" placeholder="Brand" required style="flex: 1; min-width: 120px;">
+                        <input type="text" id="item-type" placeholder="Item" required style="flex: 1; min-width: 120px;">
+                        <input type="text" id="size" placeholder="Size" required style="flex: 1; min-width: 100px;">
+                        <select id="fit" required style="flex: 1; min-width: 120px;">
+                            <option value="Just right">Just right</option>
+                            <option value="Too small">Too small</option>
+                            <option value="Too large">Too large</option>
+                        </select>
+                        <button type="submit" class="btn primary-btn" style="flex: 1; min-width: 100px;">Add</button>
+                    </form>
+                    <div id="purchase-list" class="purchase-list"></div>
+                </section>
+
+                <section class="advisor-section glass-panel card">
+                    <h2>2. Get Recommendation (Target Brand)</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 15px;">What are you looking to buy right now?</p>
+                    <form id="recommendation-form">
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="target-brand">Target Brand</label>
+                                <input type="text" id="target-brand" placeholder="e.g., Nike" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="target-item">Target Item</label>
+                                <input type="text" id="target-item" placeholder="e.g., T-Shirt" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn magic-btn">Ask AI for Size</button>
+                    </form>
+
+                    <div id="result-container" class="result-container hidden">
+                        <div class="loader hidden" id="loader"></div>
+                        <div id="ai-response" class="ai-response"></div>
+                    </div>
+                </section>
+
+                <section class="chat-section glass-panel card">
+                    <h2>General Sizing Question</h2>
+                    <form id="chat-form" style="display: flex; gap: 10px;">
+                        <input type="text" id="chat-input" placeholder="Ask anything about sizing..." required style="flex: 3;">
+                        <button type="submit" class="btn secondary-btn" style="flex: 1;">Ask</button>
+                    </form>
+                    <div id="chat-result-container" class="result-container hidden">
+                        <div class="loader hidden" id="chat-loader"></div>
+                        <div id="chat-response" class="ai-response"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
